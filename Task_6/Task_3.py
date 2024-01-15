@@ -1,22 +1,34 @@
-
-
-def check_queens(queens):
-    pairs = []
-    for i in range(len(queens)):
-        for j in range(i + 1, len(queens)):
-            pairs.append((queens[i], queens[j]))
-    for pair in pairs:
-        if not is_attacking(pair[0], pair[1]):
-            return False
-    return True
-
+import random
 
 def is_attacking(q1, q2):
-    # Проверка на атаку
-    if q1[0] == q2[0] or q1[1] == q2[1] or abs(q1[0] - q2[0]) == abs(q1[1] - q2[1]):
-        return False  # Ферзи бьют друг друга, возвращаем False
-    return True  # Ферзи не бьют друг друга, возвращаем True
+    return q1[0] == q2[0] or q1[1] == q2[1] or abs(q1[0] - q2[0]) == abs(q1[1] - q2[1])
 
+def generate_board():
+    queens = []
+    max_attempts = 1000  # Ограничение на количество попыток вставки ферзя
 
-print(check_queens(queens = [(1, 1), (2, 3), (3, 5), (4, 7), (5, 2), (6, 4), (7, 6), (8, 8)]))
+    while len(queens) < 8:
+        attempts = 0
+        while attempts < max_attempts:
+            queen = (random.randint(1, 8), random.randint(1, 8))
+            if all(not is_attacking(queen, q) for q in queens):
+                queens.append(queen)
+                break
+            attempts += 1
+        else:
+            # Если не удалось вставить ферзя после max_attempts попыток, начать заново
+            queens = []
 
+    return queens
+
+def generate_boards(num_boards=4):
+    board_list = []
+    for _ in range(num_boards):
+        board_list.append(generate_board())
+    return board_list
+
+board_list = generate_boards()
+if len(board_list) != 4:
+    print("Вы собрали не то количество комбинаций")
+else:
+    print("Отлично!")
