@@ -1,4 +1,4 @@
-code_to_write = '''
+
 import os
 
 def rename_files(desired_name, num_digits, source_ext, target_ext, name_range=None):
@@ -27,7 +27,3 @@ def rename_files(desired_name, num_digits, source_ext, target_ext, name_range=No
         num += 1
 
     return new_names
-'''
-
-with open("__init__.py", "w") as init_file:
-    init_file.write(code_to_write)
