@@ -85,8 +85,6 @@ def generation_extension(list_extension, number_files):
         generation_files(extension_result, 7, 31, 256, 4096, 1)
 
 
-
-
 if __name__ == '__main__':
     # append_digits('Digits_int_float', 12)
     # generate_name('Pseudo_name.txt', 10)

@@ -50,12 +50,3 @@ def save_results_to_csv(results, output_file):
 def save_results_to_pickle(results, output_file):
     with open(output_file, 'wb') as pickle_file:
         pickle.dump(results, pickle_file)
-
-
-# Пример использования:
-directory_to_traverse = '/путь/к/директории'
-results = traverse_directory(directory_to_traverse)
-
-save_results_to_json(results, 'output.json')
-save_results_to_csv(results, 'output.csv')
-save_results_to_pickle(results, 'output.pickle')
