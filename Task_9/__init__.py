@@ -1,3 +1,5 @@
+
+code_to_write = '''
 import csv
 import json
 import math
@@ -60,16 +62,7 @@ def find_roots(a, b, c):
         root2 = (-b - math.sqrt(discriminant)) / (2 * a)
         return root1, root2
 
+'''
 
-generate_csv_file("input_data.csv", 101)
-find_roots("input_data.csv")
-
-with open("results.json", 'r') as f:
-    data = json.load(f)
-
-if 100 <= len(data) <= 1000:
-    print(True)
-else:
-    print(f"Количество строк в файле не находится в диапазоне от 100 до 1000.")
-
-print(len(data) == 101)
+with open("__init__.py", "w") as init_file:
+    init_file.write(code_to_write)
