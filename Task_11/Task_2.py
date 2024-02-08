@@ -11,6 +11,8 @@ class Archive:
     def __init__(self, text, number):
         self.text = text
         self.number = number
+
+
         self._instance.archive_text.append(text)
         self._instance.archive_number.append(number)
 
