@@ -1,0 +1,15 @@
+2024-02-12 22:51:54,329 - ERROR - Тестирование метода raise_salary(), прошло неучачно. Значение зарплаты 50000 != 55000: %s
+Traceback (most recent call last):
+  File "C:\Users\Yurgenich\Desktop\PYTHON\Python_in\Task_15\Task_1.py", line 58, in test_employee_raise_salary
+    assert emp.salary == salary_base
+AssertionError
+2024-02-12 22:52:09,927 - ERROR - Тестирование метода raise_salary(), прошло неучачно. Значение зарплаты 50000 != 55000: %s
+Traceback (most recent call last):
+  File "C:\Users\Yurgenich\Desktop\PYTHON\Python_in\Task_15\Task_1.py", line 58, in test_employee_raise_salary
+    assert emp.salary == salary_base
+AssertionError
+2024-02-12 22:52:26,258 - ERROR - Тестирование метода raise_salary(), прошло неучачно. Значение зарплаты 55000.00000000001 != 55000: %s
+Traceback (most recent call last):
+  File "C:\Users\Yurgenich\Desktop\PYTHON\Python_in\Task_15\Task_1.py", line 58, in test_employee_raise_salary
+    assert emp.salary == salary_base
+AssertionError
