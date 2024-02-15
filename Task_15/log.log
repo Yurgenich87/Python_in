@@ -1,15 +1,6 @@
-2024-02-12 22:51:54,329 - ERROR - Тестирование метода raise_salary(), прошло неучачно. Значение зарплаты 50000 != 55000: %s
-Traceback (most recent call last):
-  File "C:\Users\Yurgenich\Desktop\PYTHON\Python_in\Task_15\Task_1.py", line 58, in test_employee_raise_salary
-    assert emp.salary == salary_base
-AssertionError
-2024-02-12 22:52:09,927 - ERROR - Тестирование метода raise_salary(), прошло неучачно. Значение зарплаты 50000 != 55000: %s
-Traceback (most recent call last):
-  File "C:\Users\Yurgenich\Desktop\PYTHON\Python_in\Task_15\Task_1.py", line 58, in test_employee_raise_salary
-    assert emp.salary == salary_base
-AssertionError
-2024-02-12 22:52:26,258 - ERROR - Тестирование метода raise_salary(), прошло неучачно. Значение зарплаты 55000.00000000001 != 55000: %s
-Traceback (most recent call last):
-  File "C:\Users\Yurgenich\Desktop\PYTHON\Python_in\Task_15\Task_1.py", line 58, in test_employee_raise_salary
-    assert emp.salary == salary_base
-AssertionError
+DEBUG    - 2024-02-16 00:42:09,454. В модуле "Task_15" в строке 139 функция "__update_json()" в 1708018929.4549284 секунд записала сообщение: Такой id 3 уже существуют
+ERROR    - 2024-02-16 00:42:09,455. В модуле "Task_15" в строке 144 функция "__update_json()" в 1708018929.455941 секунд записала сообщение: Ошибка при записи данных в файл JSON: Такой id 3 уже существуют
+INFO     - 2024-02-16 00:42:23,863. В модуле "Task_15" в строке 123 функция "__create_json()" в 1708018943.8638213 секунд записала сообщение: Файл json открыт успешно!
+ERROR    - 2024-02-16 00:53:13,829. В модуле "Task_15" в строке 094 функция "login()" в 1708019593.8297098 секунд записала сообщение: Пользователь Олег c id: 22 не найден при попытке входа.
+NoneType: None
+INFO     - 2024-02-16 00:53:54,776. В модуле "Task_15" в строке 090 функция "login()" в 1708019634.7765718 секунд записала сообщение: Пользователь Валя c id: 123 успешно зарегистрирован!
